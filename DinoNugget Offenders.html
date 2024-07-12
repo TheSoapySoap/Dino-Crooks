@@ -1,0 +1,134 @@
+<html><head><base href="https://www.dinolawbreakers.com/"><title>DinoNugget Offenders - Tracking Prehistoric Poultry Crimes</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #f0e68c;
+    color: #8b4513;
+    margin: 0;
+    padding: 20px;
+  }
+  header {
+    background-color: #ffa500;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  h1 {
+    font-size: 2.5em;
+    color: #228b22;
+    text-shadow: 2px 2px #ffd700;
+  }
+  .nugget-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .nugget {
+    background-color: #ffdab9;
+    border: 3px solid #d2691e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  .nugget img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  .crime-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .crime-list li {
+    background-color: #ff6347;
+    color: white;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  #breaking-news {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>DinoNugget Offenders</h1>
+    <p>Tracking the Misdeeds of Prehistoric Poultry Since 65 Million B.C.</p>
+  </header>
+
+  <div id="breaking-news">
+    BREAKING NEWS: T-Rex Nugget Caught Red-Handed in Cookie Jar Heist!
+  </div>
+
+  <div class="nugget-container">
+    <div class="nugget">
+      <img src="trex-nugget.png" alt="T-Rex shaped chicken nugget with angry eyebrows" width="150" height="150">
+      <h2>T-Rex Terrence</h2>
+      <ul class="crime-list">
+        <li>Intimidating smaller nuggets</li>
+        <li>Excessive roaring in quiet zones</li>
+        <li>Refusing to share ketchup</li>
+      </ul>
+    </div>
+
+    <div class="nugget">
+      <img src="stegosaurus-nugget.png" alt="Stegosaurus shaped chicken nugget with a sly grin" width="150" height="150">
+      <h2>Steggy the Swindler</h2>
+      <ul class="crime-list">
+        <li>Plate-back fraud</li>
+        <li>Impersonating a vegetable</li>
+        <li>Tail-spiked vandalism</li>
+      </ul>
+    </div>
+
+    <div class="nugget">
+      <img src="triceratops-nugget.png" alt="Triceratops shaped chicken nugget wearing a tiny cowboy hat" width="150" height="150">
+      <h2>Trike the Trickster</h2>
+      <ul class="crime-list">
+        <li>Horn-based pickpocketing</li>
+        <li>Unlicensed rodeo performances</li>
+        <li>Frill concealment of contraband</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2023 DinoNugget Offenders. All rights reserved. No nuggets were harmed in the making of this website.</p>
+    <p>For more prehistoric poultry pandemonium, visit our sister site: <a href="https://www.cretaceouscrooks.com">Cretaceous Crooks</a></p>
+    <p>For prehistoric palindromic eggshells, contact Soap at (ask for General Lime): <a href="https://www.SoupSoap.com">Soup Industries</a></p>	
+  </footer>
+
+  <script>
+    function updateBreakingNews() {
+      const news = [
+        "T-Rex Nugget Caught Red-Handed in Cookie Jar Heist!",
+        "Stegosaurus Gang Accused of Dipping Sauce Smuggling Ring",
+        "Triceratops Trio Arrested for Impersonating Traffic Cones",
+        "Velociraptor Vagrant Vandalizes Vending Machines",
+        "Brontosaurus Buddies Busted for Barbeque Sauce Bath"
+      ];
+      const newsElement = document.getElementById('breaking-news');
+      setInterval(() => {
+        newsElement.textContent = "BREAKING NEWS: " + news[Math.floor(Math.random() * news.length)];
+      }, 10000);
+    }
+    updateBreakingNews();
+  </script>
+</body></html>
